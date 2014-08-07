@@ -1,5 +1,6 @@
 require 'rspec'
 require 'album'
+require 'artist'
 
 describe 'Album' do
   describe 'initialize' do
@@ -17,4 +18,19 @@ describe 'Album' do
     end
   end
 
+  describe 'albums' do
+    it "will create a empty array for all albums" do
+      expect(Album.albums).to eq([])
+    end
+  end
+end
+
+
+describe 'Artist' do
+  describe 'initialize' do
+    it "will create an instance of a changer" do
+      new_artist = Artist.new()
+      expect(new_artist).to be_an_instance_of(Artist)
+    end
+  end
 end

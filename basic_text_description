@@ -3,12 +3,11 @@ album object
   artist name
   album name
 
-cd organizer container
+cd organizer array
    with the methods
-
     >  create new album
-       > enter album name
-       > enter artist name
+       > enter album name (ui)
+       > enter artist name (ui)
     >  list all cds
     >  search for title
     >  search for artist

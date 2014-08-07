@@ -5,7 +5,7 @@ album object
 
 cd organizer array
    with the methods
-    >  create new album
+    # >  create new album
        > enter album name (ui)
        > enter artist name (ui)
     >  list all cds

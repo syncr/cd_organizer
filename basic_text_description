@@ -1,0 +1,17 @@
+
+album object
+  artist name
+  album name
+
+cd organizer container
+   with the methods
+
+    >  create new album
+       > enter album name
+       > enter artist name
+    >  list all cds
+    >  search for title
+    >  search for artist
+
+    >  list all artists (uniq)
+    >  choose one artist to see artist albums in list

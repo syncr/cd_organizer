@@ -7,12 +7,12 @@ class Album
   end
 
   def initialize (artist, album)
-    @artist = artist
+    @artist = Artist.new(artist)
     @album = album
   end
 
-  def create
-
+  def save
+    @@albums << self
   end
 
   def list

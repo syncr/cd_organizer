@@ -33,6 +33,7 @@ class Album
 
 ## searching by Album title, returning Artist name
  def Album.title_search(user_input)
+    #use select
     Album.title_all.map do |album|
       if album.title == user_input
        album.artist.artist_name
@@ -41,6 +42,7 @@ class Album
   end
 
  def Album.artist_search(user_input)
+    #use select
     Album.title_all.map do |album|
       if album.artist.artist_name == user_input
        album.title

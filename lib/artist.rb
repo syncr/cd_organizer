@@ -24,9 +24,10 @@ class Artist
   end
 
   def Artist.list_all_artists
-    @@all_artists.map do |artist|
+    x = @@all_artists.map do |artist|
       artist.artist_name
     end
+    x.uniq
   end
 end
 

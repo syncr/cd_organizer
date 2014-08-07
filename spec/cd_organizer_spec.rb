@@ -97,6 +97,7 @@ describe 'Artist' do
   describe 'list' do
     it "will list out all albums objects in the changer" do
       new_album = Album.new( "Pink Floyd","Dark Side of the Moon")
+      new_album6 = Album.new( "Pink Floyd","Dark Side of the Moon")
       new_album2 = Album.new("The Beatles","The White Album")
       new_album3 = Album.new("The Smiths", "Hatful of Hollow")
       new_album4 = Album.new("The Sex Pistols", "Anarchy in the UK")

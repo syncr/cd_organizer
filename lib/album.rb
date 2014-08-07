@@ -21,28 +21,28 @@ class Album
     @@title_all << self
   end
 
+  def title
+    @title
+  end
+
   def Album.list
     @@title_all.map do |album|
       album.title
     end
   end
 
-  def title
-    @title
-  end
-
 ## searching by Album title, returning Artist name
  def Album.title_search(user_input)
-    Album.title_all.each do |album|
+    Album.title_all.map do |album|
       if album.title == user_input
-       return album.artist.artist
+       album.artist.artist_name
       end
     end
   end
 
  def Album.artist_search(user_input)
     Album.title_all.map do |album|
-      if album.artist.artist == user_input
+      if album.artist.artist_name == user_input
        album.title
       end
     end

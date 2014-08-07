@@ -1,22 +1,32 @@
 class Artist
 
-  @@catalogue_of_artists = []
+  @@all_artists = []
 
-  def Artist.catalogue_of_artists
-    @@catalogue_of_artists
+  def Artist.clear
+    @@all_artists = []
   end
 
-  def initialize (artist)
-    @artist = artist
+  def Artist.all_artists
+    @@all_artists
+  end
+
+  def initialize (artist_name)
+    @artist_name = artist_name
     save
   end
 
-  def artist
-    @artist
+  def artist_name
+    @artist_name
   end
 
   def save
-    @@catalogue_of_artists << self
+    @@all_artists << self
+  end
+
+  def Artist.list_all_artists
+    @@all_artists.map do |artist|
+      artist.artist_name
+    end
   end
 end
 

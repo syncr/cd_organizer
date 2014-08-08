@@ -2,9 +2,6 @@ require './lib/album'
 require './lib/artist'
 require 'pry'
 
-# p Album.title_search("Dark Side of the Moon")
-# p Album.artist_search("Pink Floyd")
-
 system 'clear'
 def main_menu
   puts "What do you want?"
@@ -45,5 +42,3 @@ def main_menu
   main_menu
 end
 main_menu
-
-
